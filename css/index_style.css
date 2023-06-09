@@ -1,0 +1,193 @@
+:root {
+    --secondary-color: #C3E3BB;
+    --primary-color: #427360;
+    --text-color: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--primary-color);
+    width: 100%;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+font-size: 56px;
+}
+h2{
+font-size: 45px;
+}
+h3{
+font-size: 35px;
+}
+h4{
+font-size: 27px;
+}
+h5{
+font-size: 21px;
+}
+h6{
+font-size: 16px;
+}
+
+/* 
+header & navbar
+*/
+
+header{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 80px;
+    background: var(--secondary-color);
+}
+
+header a img{
+        width: 206px;
+        padding: 5px;
+        
+        margin-right: 50px;
+}
+
+
+
+#nav-buttons{
+    list-style: none;
+    display: none;
+    flex-direction: row;
+    position: relative;
+    list-style: none;
+    
+   align-items: center;
+}
+
+#nav-mobile i {
+    color: #1d1a0c;
+    font-size: 24px;
+    padding: 20px;
+}
+
+#nav-buttons ul li a {
+    
+}
+#nav-buttons ul li a h2{
+    display: flex;
+    border:3px solid var(--text-color);
+   
+}
+/*
+Hero
+*/
+
+#hero{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-img{
+
+}
+
+#hero-description-title{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+#hero-description-title h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+
+#hero-description{
+     
+    text-align: center;
+}
+
+/*
+feature
+*/
+
+#feature{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+#feature-title{
+    padding: 20px 0;
+    text-align: center;
+   
+}
+
+#feature-description{
+    padding: 20px 0;
+    display: flex;
+    text-align: center;
+}
+
+#feature-list{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#feature-list ul{
+    display: grid;
+    
+}
+#feature-list li{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#feature-list li img{
+    padding: 20px 11vw 20px 0 ;
+}
+
+#feature-list li p{
+    text-align: center;
+    display: grid;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+
+.about-desc{
+    padding: 20px 0 30px ;
+
+}
+.about-desc h3{
+    padding: 0 0 30px ;
+}
+/*
+footer
+*/
+footer{
+    background-color: var(--secondary-color);
+}
+
+
+/*C3E3BB*/ 
