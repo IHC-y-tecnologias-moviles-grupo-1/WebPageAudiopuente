@@ -47,7 +47,7 @@ header{
     
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
     padding: 10px 80px;
     background: var(--secondary-color);
 }
@@ -93,10 +93,11 @@ Hero
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #hero-img{
-
+justify-content: center;
 }
 
 #hero-description-title{
@@ -186,8 +187,37 @@ feature
 footer
 */
 footer{
+    display: flex;
+    flex-direction: column;
     background-color: var(--secondary-color);
+    padding: 30px;
+    align-items: center;
 }
 
+#footer-elements{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+#footer-elements a{
+
+    display: flex;
+    font-size: 16px;
+    
+    text-decoration: none;
+    color:#222;
+    margin-bottom: 10px;
+}
+#footer-elements h5{
+    padding: 0 5px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color:#000000;
+    margin-bottom: 10px;
+}
+#nav-buttons.active{
+    display: flex;
+}
 
 /*C3E3BB*/ 
