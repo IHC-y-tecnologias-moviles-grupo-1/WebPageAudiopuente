@@ -10,12 +10,13 @@
 }
 
 body{
+    overflow-x:hidden;
     background: var(--primary-color);
     width: 100%;  
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 p{
-    font-size: 18px;
+    font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -43,11 +44,14 @@ header & navbar
 */
 
 header{
+    right: 0px;
+    top: 0vh;
     display: flex;
-    
+    position: sticky;
     align-items: center;
     justify-content: space-evenly;
     width: 100vw;
+    min-width: 350px;
     padding: 10px 80px;
     background: var(--secondary-color);
 }
@@ -59,16 +63,34 @@ header a img{
         margin-right: 50px;
 }
 
-
+/*nav-bar*/
 
 #nav-buttons{
     list-style: none;
-    display: none;
-    flex-direction: row;
-    position: relative;
-    list-style: none;
-    
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    right: -300px;
+   align-items: flex-start;
+   justify-content: flex-start;
+   background-color: var(--secondary-color);
+   padding: 80px 0 0 10px;
+   transition: 0.3s ease;
+   box-shadow: 0 40px 100px rgba(70, 62, 221, 0.1);
+}
+
+#close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 21px;
+}
+
+#nav-buttons.active{
+    right: 0px;
 }
 
 #nav-mobile i {
@@ -77,13 +99,17 @@ header a img{
     padding: 20px;
 }
 
-#nav-buttons ul li a {
-    
+#nav-buttons li {
+    list-style: none;
+   padding: 30px;
+}
+#nav-buttons li a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 #nav-buttons ul li a h2{
     display: flex;
     border:3px solid var(--text-color);
-   
 }
 /*
 Hero
@@ -94,6 +120,8 @@ Hero
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+    margin: 0 0 20px;
 }
 
 #hero-img{
@@ -104,7 +132,7 @@ justify-content: center;
     font-size: 36px;
     text-align: center;
     margin-bottom: 20px;
-    padding: 0px;
+    padding: 0px 20px;
 }
 
 #hero-description-title h1{
@@ -114,7 +142,7 @@ justify-content: center;
 
 
 #hero-description{
-     
+     padding: 0 10px;
     text-align: center;
 }
 
@@ -125,10 +153,12 @@ feature
 #feature{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 10px;
     margin: 20px 0;
     color: #ffffff;
+   
 }
-
 #feature-title{
     padding: 20px 0;
     text-align: center;
@@ -136,10 +166,12 @@ feature
 }
 
 #feature-description{
-    padding: 20px 0;
+    font-weight:200;
+    padding: 0 20px;
     display: flex;
     text-align: center;
 }
+
 
 #feature-list{
     padding: 20px 0;
@@ -161,6 +193,8 @@ feature
 
 #feature-list li img{
     padding: 20px 11vw 20px 0 ;
+    width: 100%;
+    
 }
 
 #feature-list li p{
