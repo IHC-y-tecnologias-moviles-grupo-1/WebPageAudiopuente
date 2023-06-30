@@ -1,0 +1,616 @@
+:root {
+    --secondary-color: #C3E3BB;
+    --primary-color: #427360;
+    --text-color: #000000;
+}
+*{
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x:hidden;
+    background: var(--primary-color);
+    width: 100%;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 56px;
+    }
+
+h2{
+    font-size: 45px;
+    }
+h3{
+    font-size: 35px; 
+}
+h4{
+    font-size: 27px; 
+}
+    
+h5{
+    font-size: 21px;
+}
+    
+h6{ 
+    font-size: 16px; 
+}
+
+/* 
+header & navbar
+*/
+
+header{
+    right: 0px;
+    top: 0vh;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    min-width: 350px;
+    padding: 10px 80px;
+    background: var(--secondary-color);
+}
+
+header a img{
+        width: 206px;
+        padding: 5px;
+        
+        margin-right: 50px;
+}
+
+/*nav-bar*/
+
+#nav-buttons{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    right: -300px;
+   align-items: flex-start;
+   justify-content: flex-start;
+   background-color: var(--secondary-color);
+   padding: 80px 0 0 10px;
+   transition: 0.3s ease;
+   box-shadow: 0 40px 100px rgba(70, 62, 221, 0.1);
+}
+
+#close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 21px;
+}
+
+#nav-buttons.active{
+    right: 0px;
+}
+
+#nav-mobile i {
+    color: #1d1a0c;
+    font-size: 24px;
+    padding: 20px;
+}
+
+#nav-buttons li {
+    list-style: none;
+   padding: 30px;
+}
+#nav-buttons li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+#nav-buttons ul li a h2{
+    display: flex;
+    border:3px solid var(--text-color);
+}
+/*
+Hero
+*/
+
+#hero{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 0 20px;
+}
+
+#hero-img{
+    margin: 50px 0px;
+justify-content: center;
+
+}
+
+#hero-img img{
+    width: 100%;
+}
+
+#hero-description{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+}
+
+#hero-description h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#hero-description h4{
+    padding: 20px 0;
+}
+
+#hero-download{
+    display: flex;
+    align-items: center
+}
+
+#hero-download img{
+    width: 40%;
+    padding: 10px 20px;
+}
+
+#hero-download h4{
+    font-size: 21px;
+}
+/*
+feature
+*/
+
+#feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+    color: #ffffff;
+   
+}
+#feature-title{
+    padding: 20px 0;
+    text-align: center;
+   
+}
+
+#feature-description{
+    font-weight:200;
+    padding: 0 20px;
+    display: flex;
+    text-align: center;
+}
+
+
+#feature-list{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#feature-list ul{
+    display: grid;
+    
+}
+
+#feature-list li{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+#feature-list img{
+    width: 50%;
+}
+#feature-list li img{
+    padding: 20px 11vw 20px 0 ;
+    width: 40%;
+    color: #C3E3BB; 
+}
+
+#feature-list li p{
+    text-align: left;
+    display: flex;
+
+}
+
+#feature-list-img{
+
+    display: none;
+    
+}
+
+#feature-list-img img{
+    width: 100%;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about-desc{
+    padding: 30px 0 30px ;
+
+}
+.about-desc h2{
+    padding: 15px ;
+}
+.about-desc p{
+    padding: 15px ;
+}
+.about-desc img{
+    width: 50%;
+    margin: 30px 0;
+}
+/*
+footer
+*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    padding: 40px 0;
+    align-items: center;
+}
+
+#footer-elements{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+#footer-elements a{
+    display: flex;
+    font-size: 16px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom: 10px;
+}
+#footer-elements h5{
+    padding: 0 5px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color:#000000;
+    margin-bottom: 10px;
+}
+#nav-buttons.active{
+    display: flex;
+}
+
+#contactinfo{
+ 
+    background-color: #54798c43;
+    height: 140vh;
+    max-width: 100%;
+    padding: 0 80px;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#info-block{
+    text-align: center;
+
+}
+
+#contactinfo img {
+    width: auto;
+    max-width: 150px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+#contactinfo h2{
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#contactinfo h4{
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contactinfo a{
+    color: #dddd;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#contact-details .details{
+    width: 40%;
+    box-shadow: 10px 10px 54px  rgba(70, 62, 221, 0.1) ;
+    padding-left: 20px;
+    margin: 20px 20px 20px 20px;
+    border: 10px 10px rgba(70, 62, 221, 0.1) ;
+}
+
+#contact-details .details span{
+    font-size: 12px;
+    
+}
+
+#contact-details .details h2{
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+    box-shadow: 10px 10px 54px  rgba(70, 62, 221, 0.1) ;
+}
+
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+/*C3E3BB*/
+
+
+/*Media queries*/
+
+@media(min-width:820px){
+
+   
+
+    /*Media query Hero*/
+    #hero {
+        margin: 10px;
+        flex-direction: row;
+
+    }
+    #hero-description{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #hero-download{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #hero-img{
+        display: flex;
+        
+    }
+    #hero-img img{
+        width: 70%;
+        margin: 0;
+    }
+    #hero-description h1{
+        font-size: 4vw;
+    }
+    #hero-description h4{
+        font-size: 1.4vw;
+    }
+    #hero-download h4{
+        font-size: 35px;
+        letter-spacing: 1.6px;
+    }
+
+    #feature{
+        padding: 20px;
+    }
+    
+   
+
+    #feature-title h2{
+        font-size: 60px;
+    }
+
+    #feature-description p{
+        font-size: 24px;
+        margin: 0 0 10px;
+    }
+
+    #feature-list{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #feature-list li {
+        margin: 0 0 0 60px;
+    }
+
+    #feature-list li img {
+        padding: 20px 4vw 20px 0;
+        width: 14.5vw;
+        color: #C3E3BB;
+    }
+
+    #feature-list li p{
+        font-size: 35px;
+    }
+
+    #feature-list-img{
+        margin: 0 80px 0 0;
+        display: flex;
+        align-items: ce nter;
+        justify-content: center;
+    }
+
+    #hero-download img{
+        width: 30%;
+        padding: 20px;
+    }
+
+    #contactinfo{
+ 
+        background-color: #54798c43;
+        height: 140vh;
+        max-width: 100%;
+        padding: 0 80px;
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #info-block{
+        text-align: center;
+    
+    }
+    
+    #contactinfo img {
+        width: auto;
+        max-width: 150px;
+        height: auto;
+        padding-bottom: 20px;
+      }
+    
+    #contactinfo h2{
+        color: #ffffff;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    #contactinfo h4{
+        color: #ffffff;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    #contactinfo a{
+        color: #dddd;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+
+    #contact-details{
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    #contact-details .details{
+        width: 40%;
+        box-shadow: 10px 10px 54px  rgba(70, 62, 221, 0.1) ;
+        padding-left: 20px;
+        margin: 20px 20px 20px 20px;
+        border: 10px 10px rgba(70, 62, 221, 0.1) ;
+    }
+
+    #contact-details .details span{
+        font-size: 12px;
+        
+    }
+
+    #contact-details .details h2{
+        font-size: 30px;
+        line-height: 35px;
+        padding: 20px 0;
+    }
+
+    #contact-details .details h3{
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    #contact-details .details li{
+        list-style: none;
+        display: flex;
+        padding: 10px 0;
+    }
+
+    #contact-details .details li i{
+        font-size: 14px;
+        padding-right: 22px;
+    }
+
+    #contact-details .details li p{
+        margin: 0;
+        font-size: 14px;
+    }
+    #contact-details .map{
+        width: 55%;
+        height: 400px;
+        box-shadow: 10px 10px 54px  rgba(70, 62, 221, 0.1) ;
+    }
+
+    #contact-details .map iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    #hero-download img{
+        width: 30%;
+        padding: 20px;
+    }
+    .section-p1{
+        padding: 40px 80px;
+    }
+
+
+}

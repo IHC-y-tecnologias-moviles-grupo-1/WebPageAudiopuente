@@ -5,28 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index_style.css" />
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
 
   <body>
     <header>
-      <div>
+      <a href="index.html ">
         <img
-          src="img/audiopuente-low-resolution-logo-WHITE-on-transparent-background.png"
+          src="img/audiopuente-low-resolution-logo-black-on-transparent-background.png"
           alt=""
+          width="206px"
         />
-      </div>
+      </a>
 
       <nav>
-        <ul>
-          <li><h3>Contactanos</h3></li>
+        <ul id="nav-buttons">
+          <li>
+            <a href="html/contacto.html"><h5>Contactanos</h5></a>
+            <a href="#" id="close"><i class="fa fa-times"></i> </a>
+          </li>
         </ul>
+
+        <div id="nav-mobile">
+          <!--<a href="cart.hmtl"><i class="fa fa-shopping-bag"></i> </a>-->
+          <i class="fas fa-outdent" id="bar"> </i>
+        </div>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section id="hero">
+        
+          <div id="hero-img">
+            <img src="img/Mobile_with_app.png" alt="" />
+          </div>
+          <div id="hero-text">
 
-    <footer></footer>
+            <div id="hero-description">
+         
+              <h1>Creando conexiones, cerrando brechas</h1>
+              <h4>
+                Tenemos la misión de eliminar las barreras de comunicación, y con
+              
+                nuestra aplicación buscamos facilitar la comunicación de los
+                usuarios
+             
+               de habla hispana con discapacidad auditiva.
+              </h4>
+
+            </div>
+            <div id="hero-download">
+              <img src="img/available-on-the-app-store-logo.png" alt="">
+              <h4>Disponible en la App Store</h4>
+            </div>
+
+            <div id="hero-download">
+              <img src="img/get-it-on-google-play-logo.png" alt="">
+              <h4>Disponible en la Play Store</h4>
+            </div>
+
+      
+      </section>
+
+      <section id="feature">
+        <div id="feature-title">
+          <h2>Caracteristicas</h2>
+        </div>
+        <div id="feature-description">
+          <p>
+            Estas son las funciones que permitirán a quienes lo necesiten a
+            encontrar mas maneras de comunicarse
+          </p>
+        </div>
+        <div id="feature-list">
+          
+            <ul>
+              <li>
+                <img src="img/small_feature_img1.png" alt="" />
+                <p>Glosario de lenguajes de Señas Multinacional</p>
+              </li>
+              <li>
+                <img src="img/small_feature_img2.png" alt="" />
+                <p>Traducción de voz a texto</p>
+              </li>
+              <li>
+                <img src="img/small_feature_img3.png" alt="" />
+                <p>Traducción de texto a voz</p>
+              </li>
+            </ul>
+          
+          <div id="feature-list-img">
+            <img src="img/person_using_smartphone-2.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about-desc">
+          <h2>Quienes Somos</h2>
+          <p>
+            Somos un grupo de alumnos que buscan desarrollar una herramienta
+            para asistir en la comunicación.
+          </p>
+          <img src="img/aboutus_img1.webp" alt="" />
+        </div>
+        <div class="about-desc">
+          <h2>Lo que hacemos</h2>
+          <p>
+            Desarrollamos diferentes soluciones en forma de aplicaciones que
+            buscan ser herramientas oportunas.
+          </p>
+          <img src="img/aboutus_image2.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Síguenos en</h2>
+      <div id="footer-elements">
+        <a class="fa-brands fa-twitter" href=""> <h5>Twitter</h5></a>
+        <a class="fa-brands fa-instagram" href=""><h5>Instagram</h5></a>
+        <a class="fa-brands fa-facebook" href=""><h5>Facebook</h5></a>
+      </div>
+    </footer>
+
+    <script src="javascript/index_script.js"></script>
   </body>
 </html>
