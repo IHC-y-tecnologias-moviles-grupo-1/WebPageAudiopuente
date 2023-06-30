@@ -4,6 +4,8 @@
     --text-color: #000000;
 }
 *{
+    letter-spacing: 1px;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,28 +17,33 @@ body{
     width: 100%;  
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 p{
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1{
-font-size: 56px;
-}
+    font-weight: 600;
+    font-size: 56px;
+    }
+
 h2{
-font-size: 45px;
-}
+    font-size: 45px;
+    }
 h3{
-font-size: 35px;
+    font-size: 35px; 
 }
 h4{
-font-size: 27px;
+    font-size: 27px; 
 }
+    
 h5{
-font-size: 21px;
+    font-size: 21px;
 }
-h6{
-font-size: 16px;
+    
+h6{ 
+    font-size: 16px; 
 }
 
 /* 
@@ -125,27 +132,44 @@ Hero
 }
 
 #hero-img{
+    margin: 50px 0px;
 justify-content: center;
+
 }
 
-#hero-description-title{
+#hero-img img{
+    width: 100%;
+}
+
+#hero-description{
     font-size: 36px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 0px 20px;
 }
 
-#hero-description-title h1{
+#hero-description h1{
     font-size: 45px;
     margin-bottom: 20px;
 }
 
-
-#hero-description{
-     padding: 0 10px;
-    text-align: center;
+#hero-description h4{
+    padding: 20px 0;
 }
 
+#hero-download{
+    display: flex;
+    align-items: center
+}
+
+#hero-download img{
+    width: 40%;
+    padding: 10px 20px;
+}
+
+#hero-download h4{
+    font-size: 21px;
+}
 /*
 feature
 */
@@ -176,30 +200,46 @@ feature
 #feature-list{
     padding: 20px 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+   
 }
 
 #feature-list ul{
     display: grid;
     
 }
+
 #feature-list li{
-    text-align: center;
     display: flex;
     flex-direction: row;
+    text-align: center;
     align-items: center;
+    justify-content: flex-start;
     padding: 0 20px;
 }
-
+#feature-list img{
+    width: 50%;
+}
 #feature-list li img{
     padding: 20px 11vw 20px 0 ;
-    width: 100%;
-    
+    width: 40%;
+    color: #C3E3BB; 
 }
 
 #feature-list li p{
-    text-align: center;
-    display: grid;
+    text-align: left;
+    display: flex;
+
+}
+
+#feature-list-img{
+
+    display: none;
+    
+}
+
+#feature-list-img img{
+    width: 100%;
 }
 
 #about{
@@ -208,14 +248,22 @@ feature
     color: #ffffff;
     align-items: center;
     text-align: center;
+    margin: 20px 0;
 }
 
 .about-desc{
-    padding: 20px 0 30px ;
+    padding: 30px 0 30px ;
 
 }
-.about-desc h3{
-    padding: 0 0 30px ;
+.about-desc h2{
+    padding: 15px ;
+}
+.about-desc p{
+    padding: 15px ;
+}
+.about-desc img{
+    width: 50%;
+    margin: 30px 0;
 }
 /*
 footer
@@ -224,7 +272,7 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-color);
-    padding: 30px;
+    padding: 40px 0;
     align-items: center;
 }
 
@@ -234,10 +282,8 @@ footer{
     margin: 20px;
 }
 #footer-elements a{
-
     display: flex;
     font-size: 16px;
-    
     text-decoration: none;
     color:#222;
     margin-bottom: 10px;
@@ -254,4 +300,96 @@ footer{
     display: flex;
 }
 
-/*C3E3BB*/ 
+/*C3E3BB*/
+
+
+/*Media queries*/
+
+@media(min-width:820px){
+
+   
+
+    /*Media query Hero*/
+    #hero {
+        margin: 10px;
+        flex-direction: row;
+
+    }
+    #hero-description{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #hero-download{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #hero-img{
+        display: flex;
+        
+    }
+    #hero-img img{
+        width: 70%;
+        margin: 0;
+    }
+    #hero-description h1{
+        font-size: 4vw;
+    }
+    #hero-description h4{
+        font-size: 1.4vw;
+    }
+    #hero-download h4{
+        font-size: 35px;
+        letter-spacing: 1.6px;
+    }
+
+    #feature{
+        padding: 20px;
+    }
+    
+   
+
+    #feature-title h2{
+        font-size: 60px;
+    }
+
+    #feature-description p{
+        font-size: 24px;
+        margin: 0 0 10px;
+    }
+
+    #feature-list{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #feature-list li {
+        margin: 0 0 0 60px;
+    }
+
+    #feature-list li img {
+        padding: 20px 4vw 20px 0;
+        width: 14.5vw;
+        color: #C3E3BB;
+    }
+
+    #feature-list li p{
+        font-size: 35px;
+    }
+
+    #feature-list-img{
+        margin: 0 80px 0 0;
+        display: flex;
+        align-items: ce nter;
+        justify-content: center;
+    }
+
+    
+    
+}

@@ -1,4 +1,4 @@
-
+/*Script para el menu hamburguer en dipositivos moviles*/ 
 const bar = document.getElementById('bar')
 const navbar = document.getElementById('nav-buttons');
 const close = document.getElementById('close');
